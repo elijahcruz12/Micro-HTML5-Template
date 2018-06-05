@@ -114,15 +114,18 @@ code, kbd, pre, samp {
 }
 
 #textarea, input[type=text]{
-    background-color: #ffffff;
+    background-color: transparent;
+    color: #39F;
 
-    border: 2px solid rgba(0, 0, 255, 0.5);
+    border: 1px solid #39F;
     transition: background-color,.15s;
 }
 
 #textarea:focus, input[type=text]:focus {
 
-    border: 2px solid /*#5EADFF*/ rgba(0, 200, 255, 1);
+    border: 1px solid #007FFF;
+    background-color: #fff;
+    color: #007FFF;
 }
 
 /* Class for .between the sections added after a .container-fluid */
