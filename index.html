@@ -1,18 +1,125 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Micro HTML5 Theme</title>
-		<meta name="Description" content="This page is the example brought to you by the ECKit Team.">
-	      <meta name="Keywords" content="ECKit, css, html, github, framework">
-      	<meta charset="UTF-8">
+		<meta name="Description" content="Minimalistic HTML5 Page called Micro created by Elijah Cruz">
+	    <meta name="Keywords" content="Elijah Cruz, micro, css, html, github, framework">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/grid.css">
 	    <link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
-		<nav class="nav row">
-			<h1 class="title col-xs col-sm-9 col-md-11">Micro Theme</h1>
-			<i class="navicon col-xs-2 col-sm col-md-1">X</i>
-		</nav>
+	<body class="page" id="top">
+		<header class="hero">
+			<div class="row center-xs">
+				<h1 class="hero-headline">Micro HTML5 Theme</h1>
+			</div>
+			<div class="row center-xs">
+				<p class="hero-copy">A minimalistic HTML5 template created by Elijah Cruz.</p>
+			</div>
+			<br />
+			<div class="row center-xs">
+				<a class="nav-item" href="#top">Home</a>
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#about">Clients</a>
+				<a class="nav-item" href="#about">Contact</a>
+			</div>
+		</header>
+
+		<section class="page-section" id="about">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 first-sm">
+						<h2 class="section-title">About</h2>
+
+						<p>You can easily create an amazing about section just using this simple piece. There is even a nice image on the other side. Be sure to change the images and any other items in this template.</p>
+						<a class="button" href="#">Email</a>
+						<a class="button" href="#">Text</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 first-xs">
+						<img class="img-fluid" src="img/hills.jpg" alt="Hills">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section" id="clients">
+			<div class="container-fluid">
+				<h2 class="section-title">Clients</h2>
+
+				<h4>I have had the clients below:</h4>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md">Apache</div>
+					<div class="col-xs-12 col-sm-6 col-md">MySQL</div>
+					<div class="col-xs-12 col-sm-6 col-md">PHP</div>
+					<div class="col-xs-12 col-sm-6 col-md">Linux</div>
+					<div class="col-xs-12 col-sm-6 col-md">GitHub</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section" id="contact">
+			<div class="container-fluid">
+				<h1 class="section-title">Contact</h1>
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-lg-9 col-xl-10 first-sm">
+						<h4>Message me:</h4>
+						<form>
+							<div class="form-item row">
+								<label for="name" class="col-xs">Name:</label>
+								<input type="text" id="name" class="col-xs-8">
+								<div class="col-sm-2"></div>	
+							</div>
+							
+							<div class="form-item row">
+								<label for="subject" class="col-xs">Subject:</label>
+								<input type="text" id="subject" class="col-xs-8">
+								<div class="col-sm-2"></div>	
+							</div>
+
+							<div class="form-item row">
+								<label for="textarea" class="col-xs">Comment</label>
+								<textarea id="textarea" rows="5" class="col-xs-8"></textarea>
+								<div class="col-sm-2"></div>
+							</div>
+
+							<br />
+
+							<div class="form-item row">
+								<input type="submit" class="button" id="submit" value="Submit"/>
+							</div>
+						</form>
+					</div>
+					<div class="col-xs-12 col-md col-lg col-xl first-xs">
+						<h4>How to find me:</h4>
+							
+						<h6>Address</h6>
+						<p>123 Fake St.<br>
+							City, ST 12345 Country
+						</p>
+
+						<h6>Phone</h6>
+						<p>+1 (234) 456 - 7890</p>
+
+						<h6>Email</h6>
+						<p>email@email.com</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="page-footer">
+			<div class="row xs-between">
+				<div class="col-xs start">
+					<a class="tag" href="http://github.com/elijahcruz12">Site Created by @elijahcruz12 MIT License</a>
+				</div>
+				<div class="col-xs end">
+					<a class="link-top" href="#top">⇪ back to top</a>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

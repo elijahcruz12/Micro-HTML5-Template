@@ -1,25 +1,126 @@
-/* Navigation Bar */
-.nav{
-	background-color: rgba(10,10,155,1.0);
-	color: rgba(255,255,255,1);
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	line-height: 1em;
+/* Generic */
+body{
+	font-family: Gibson,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
 }
 
-/* Desktop Versions of Certain Things */
-
-/* Nav Icon and Nav Items */
-
-.navicon {
-    font-size: 2em;
-	Content: ;
+a {
+	text-decoration: none;
+	color: #007FFF;
+	padding: 0 0 .2rem;
+	font-weight: 700;
 }
 
-@media (min-width: 768px){
-	.navicon{
-		display: :none;
-	}
+code, kbd, pre, samp {
+    font-family: monospace,serif;
+    font-size: 1em;
+}
+
+/* Page */
+.page {
+    z-index: 0;
+}
+
+/* Hero */
+.hero {
+    box-sizing: border-box;
+    padding: 2rem;
+    /* All the background options are here to allow you to completly edit the hero.
+    ** Tip: The hero looks great with a 2000X3000 image.
+     */
+    background: #FFF;
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto auto;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+}
+.hero-headline {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+.hero-copy {
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding: 0 2rem;
+    text-align: center;
+}
+.nav-item {
+	padding: 1rem;
+	padding-top: .1rem;
+}
+
+/* Page Sections */
+.page-section {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	background: #EEE;
+        background-color: rgb(238, 238, 238);
+        background-image: none;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto auto;
+}
+
+/* Buttons */
+.button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 11rem;
+    padding: 0 4rem;
+    margin: 1rem;
+    height: 3rem;
+    line-height: 3rem;
+    border: 1px solid #007FFF;
+    border-radius: 2px;
+    color: #007FFF;
+    font-size: 1.25rem;
+    transition: background-color,.15s;
+}
+
+.button:hover {
+    background: #39F;
+    border-color: #39F;
+    color: #FFF;
+    text-shadow: 0 1px #007FFF;
+}
+
+.button:active {
+    background: #007FFF;
+    color: #FFF;
+    border-top: 2px solid #06C;
+}
+
+/* Image */
+.img-fluid {
+	width: 100%;
+	height: auto;
+}
+
+/* Contact Form */
+.form-item {
+    margin-bottom: .5em;
+}
+
+#textarea, input[type=text]{
+    background-color: #ffffff;
+
+    border: 1px solid #007FFF;
+    transition: background-color,.15s;
+}
+
+#textarea:focus, input[type=text]:focus {
+
+    border: 2px solid #5EADFF;
 }
